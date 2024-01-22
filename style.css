@@ -11,7 +11,21 @@
     font-style: normal;
 
 
+
 }
+
+::selection {
+    background: rgb(255, 226, 130);
+    color: #00b0fb;
+
+}
+
+::-moz-selection {
+    background: rgb(255, 226, 130);
+    color: #00b0fb;
+}
+
+
 
 html,
 body {
@@ -56,6 +70,8 @@ body {
 
 }
 
+
+
 input {
 
     border: none;
@@ -66,7 +82,12 @@ input {
     padding-left: 10px;
     margin-left: 10px;
     font-size: 1rem;
-  
+}
+
+input:focus {
+    outline: none;
+    background: linear-gradient(90deg, wheat, aqua);
+
 }
 
 button {
@@ -158,15 +179,15 @@ button {
 }
 
 
-.hide{
+.hide {
     display: none;
 }
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-    .main{
+    .main {
         width: 100%;
         height: 100%;
         border-radius: 0;
@@ -178,8 +199,8 @@ button {
 
 
 @media screen and (max-width:2340px) and (max-height:480px) {
-    
-    .main{
+
+    .main {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
@@ -189,50 +210,55 @@ button {
         width: 80vw;
         height: 40px;
     }
-    .input-field input{
+
+    .input-field input {
         height: 30px;
-        margin-left:6px ;
+        margin-left: 6px;
     }
-    .input-field button{
+
+    .input-field button {
         width: 30px;
         height: 30px;
-     
+
         margin-right: 10px;
-        
+
     }
-    .input-field img{
+
+    .input-field img {
         width: 25px;
         height: 25px;
     }
 
 
-    .location h1{
+    .location h1 {
         margin-top: 10px;
         font-size: 2.8rem;
     }
 
 
-    .status img{
+    .status img {
         width: 90px;
     }
-    .align img{
+
+    .align img {
         width: 50px;
     }
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-    .main{
+    .main {
         width: 100%;
         height: 100%;
         border-radius: 0;
     }
 
-    .align{
+    .align {
         font-size: 0.8rem;
     }
-    .align img{
+
+    .align img {
         width: 70px;
     }
 
